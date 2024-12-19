@@ -15,14 +15,14 @@ const router = createRouter({
       component: () => import('@/views/ProjectsView.vue'),
     },
     {
-      path: '/Resume',
+      path: '/resume',
       name: 'resume',
       component: () => import('@/views/ResumeView.vue'),
     },
     {
-      path: '/Comments',
-      name: 'comments',
-      component: () => import('@/views/CommentsView.vue'),
+      path: '/contact',
+      name: 'contact',
+      component: () => import('@/views/ContactView.vue'),
     },
     {
       path: '/:catchAll(.*)',

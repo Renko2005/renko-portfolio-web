@@ -51,12 +51,12 @@ const toggleTheme = () => {
         >Resume</RouterLink
       >
       <RouterLink
-        to="/comments"
-        :class="[isActiveLink('/comments') 
+        to="/contact"
+        :class="[isActiveLink('/contact') 
         ? 'active-page' 
         : 'inactive-page'
         ]"
-        >Comments</RouterLink
+        >Contact</RouterLink
       >
     </div>
 

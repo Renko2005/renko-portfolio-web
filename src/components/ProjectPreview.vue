@@ -66,6 +66,7 @@ const props = defineProps({
   font-weight: 800;
   font-family: sans-serif;
   line-height: 1;
+  text-align: left;
 }
 .subtitle {
   color: var(--text-color);
@@ -74,6 +75,7 @@ const props = defineProps({
   padding-right: 2rem;
   font-size: 2rem;
   font-family: sans-serif;
+  text-align: left;
 }
 @media (max-width: 1024px) {
   .project-preview-container {
