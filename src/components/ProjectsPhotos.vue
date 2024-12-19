@@ -11,31 +11,31 @@ import add_job from '/public/add_job.png';
 const projects = [
   {
     image: youtube_photo, 
-    link: '/project/1'             
+    link: '/projects/youtube'             
   },
   {
     image: vue_jobs_homepage,
-    link: '/project/2'
+    link: '/projects/vue-jobs'
   },
   {
     image: browse_jobs,
-    link: '/project/3'
+    link: '/projects/vue-jobs'
   },
   {
     image: view_job,
-    link: '/project/3'
+    link: '/projects/vue-jobs'
   },
   {
     image: edit_job,
-    link: '/project/3'
+    link: '/projects/vue-jobs'
   },
   {
     image: added_job_succesfully,
-    link: '/project/3'
+    link: '/projects/vue-jobs'
   },
   {
     image: add_job,
-    link: '/project/3'
+    link: '/projects/vue-jobs'
   }
 ];
 </script>
