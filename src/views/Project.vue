@@ -1,0 +1,108 @@
+<script setup>
+  import { useRoute } from 'vue-router';
+  import youtube_photo from '@/assets/youtube_homepage_clone.png';
+
+  const route = useRoute();
+  const projectId = route.params.id;
+
+  const projects = [
+    {
+      id: 'youtube',
+      title: 'Youtube Clone',
+      description: 'A remake of the YouTube homepage using HTML, CSS, and a bit of JavaScript. With this project I learned alot about flexboxes, grids and absolute and relative elements. I also worked alot with tooltips and transitions to make everything look smooth and learned how to use @media for an extra responsive design. ',
+      image: youtube_photo,
+      github: 'https://github.com/Renko2005'
+    },
+    {
+      id: '2',
+      title: 'Project 2',
+      description: 'A project about something else.',
+      image: '/path/to/project-2-image.png',
+    },
+    {
+      id: '3',
+      title: 'Project 3',
+      description: 'Another interesting project.',
+      image: '/path/to/project-3-image.png',
+    },
+  ];
+
+  const project = projects.find(p => p.id === projectId)
+</script>
+<template>
+  <div class="project-container">
+    <div class="intro-container">
+      <p class="title">{{ project.title }}</p>
+      <div class="description-photo-container">
+        <div>
+          <p class="description">{{ project.description }}</p>
+          <a :href="project.github" target="_blank"><span class="normal-github">Github repository <i class="pi pi-github"></i></span><span class="short-github-text">Github <i class="pi pi-github"></i></span></a>
+          <a :href="project.github" target="_blank">Website <i class="pi pi-globe"></i></a>
+        </div>
+        <img :src="project.image" alt="Project Image" class="project-photo"/>
+      </div>
+    </div>
+  </div>
+  
+</template>
+
+<style scoped>
+  p {
+    font-family: sans-serif;
+  }
+  .project-container{
+    padding: 5rem;
+  }
+  .title{
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 2rem;
+  }
+  .description {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+  .description-photo-container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  .project-photo{
+    width: 100%;
+    height: auto;
+  }
+  a {
+    display: inline-block;
+    background-color: var(--text-color);
+    color: var(--background-color);
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 1rem;
+    border-radius: 2rem;
+    margin: 1rem;
+    transition: 0.5s;
+  }
+  a:hover{
+    transform: scale(1.05);
+  }
+  .short-github-text{
+    display: none;
+  }
+  @media (max-width: 1024px) {
+    .short-github-text {
+      display: inline-block;
+    }
+    .normal-github{
+      display: none;
+    }
+    .description-photo-container {
+      grid-template-columns: 1fr;
+    }
+    .description-photo-container img {
+      order: -1; 
+    }
+  }
+</style>

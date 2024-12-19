@@ -1,5 +1,6 @@
 <script setup>
 import { defineProps } from 'vue';
+import { RouterLink } from 'vue-router';
 
 const props = defineProps({
   title: {
@@ -22,7 +23,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="project-preview-container">
+  <RouterLink :to="linkTo" class="project-preview-container">
     <div class="project-info-container">
       <p class="title">
         {{ title }}
@@ -34,11 +35,12 @@ const props = defineProps({
     <div class="project-img-container">
       <img :src="imageSrc" alt="Project Image" class="project-photo" />
     </div>
-  </div>
+  </RouterLink>
 </template>
 
 <style scoped>
 .project-preview-container {
+  text-decoration: none;
   display: grid;
   grid-template-columns: 1fr 1fr;
   box-shadow: var(--project-photo-box-shadow);

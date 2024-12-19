@@ -35,7 +35,7 @@ const copyToClipboard = (type) => {
   
 </template>
 
-<style>
+<style scoped>
   .contact-me-container {
     text-align: center;
   }
