@@ -1,6 +1,7 @@
 <script setup>
   import { useRoute } from 'vue-router';
   import youtube_photo from '/public/youtube_homepage_clone.png';
+  import vue_jobs_homepage from '/public/vue_jobs_homepage.png';
 
   const route = useRoute();
   const projectId = route.params.id;
@@ -15,10 +16,12 @@
       website: 'https://renko2005.github.io/youtube_clone/'
     },
     {
-      id: '2',
-      title: 'Project 2',
-      description: 'A project about something else.',
-      image: '/path/to/project-2-image.png',
+      id: 'vue-jobs',
+      title: 'vue-jobs',
+      description: `This is the first website I made using the vue-framework. With this project I learned all about using v-directives, forms, api\'s, the vue router, ref and reactive value and so much more.the webpage has a home page with a hero(sorft of welcome coponent), 2 homecards to direct different kinds of clients to the right page and some limited amount of jobs. from that page you can go to either the jobs page to browse more, or you can add, edit or delete some jobs. Unfortunately I can't put the website online because the backend runs a local json server for the job information. which is not compatible for a deployment.`,
+      image: vue_jobs_homepage,
+      github: 'https://github.com/Renko2005/vue-jobs',
+      website: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
     },
     {
       id: '3',

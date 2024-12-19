@@ -1,6 +1,7 @@
 <script setup>
 import ProjectPreview from '@/components/ProjectPreview.vue'; 
 import youtube_photo from '/public/youtube_homepage_clone.png';
+import vue_jobs_homepage from '/public/vue_jobs_homepage.png';
 
 const projects = [
   {
@@ -10,17 +11,11 @@ const projects = [
     link: '/projects/youtube'             
   },
   {
-    title: 'Youtube clone',
-    subtitle: 'A remake of the youtube homepage with plain html, css and a bit of javascript.',
-    image: youtube_photo,
-    link: '/projects/2'
+    title: 'Vue jobs',
+    subtitle: 'My first completed vue-website. Here i learned all the basics you need to develop a working vue-website.',
+    image: vue_jobs_homepage,
+    link: '/projects/vue-jobs'
   },
-  {
-    title: 'Youtube clone',
-    subtitle: 'A remake of the youtube homepage with plain html, css and a bit of javascript.',
-    image: youtube_photo,
-    link: '/projects/3'
-  }
 ];
 </script>
 
