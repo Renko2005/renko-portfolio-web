@@ -1,6 +1,12 @@
 <script setup>
 import ProjectPhoto from '@/components/ProjectPhoto.vue'; 
-import youtube_photo from '@/assets/youtube_homepage_clone.png'
+import youtube_photo from '/public/youtube_homepage_clone.png';
+import vue_jobs_homepage from '/public/vue_jobs_homepage.png';
+import browse_jobs from '/public/browse_jobs.png';
+import view_job from '/public/view_job.png';
+import edit_job from '/public/edit_job.png';
+import added_job_succesfully from '/public/added_job_succesfully.png';
+import add_job from '/public/add_job.png';
 
 const projects = [
   {
@@ -8,11 +14,27 @@ const projects = [
     link: '/project/1'             
   },
   {
-    image: youtube_photo,
+    image: vue_jobs_homepage,
     link: '/project/2'
   },
   {
-    image: youtube_photo,
+    image: browse_jobs,
+    link: '/project/3'
+  },
+  {
+    image: view_job,
+    link: '/project/3'
+  },
+  {
+    image: edit_job,
+    link: '/project/3'
+  },
+  {
+    image: added_job_succesfully,
+    link: '/project/3'
+  },
+  {
+    image: add_job,
     link: '/project/3'
   }
 ];
@@ -45,6 +67,7 @@ const projects = [
   row-gap: 2rem;
   padding-left: 5rem;
   padding-right: 5rem;
+  padding-bottom: 10rem;
 }
 .title {
   font-size: 2rem; 

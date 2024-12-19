@@ -1,5 +1,5 @@
 <script setup>
-  import cv_as_foto from '@/assets/cv_as_foto.png';
+  import cv_as_foto from '/public/cv_as_foto.png';
 </script>
 <template>
   <section class="resume-container">

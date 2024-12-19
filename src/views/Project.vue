@@ -1,6 +1,6 @@
 <script setup>
   import { useRoute } from 'vue-router';
-  import youtube_photo from '@/assets/youtube_homepage_clone.png';
+  import youtube_photo from '/public/youtube_homepage_clone.png';
 
   const route = useRoute();
   const projectId = route.params.id;
@@ -11,7 +11,8 @@
       title: 'Youtube Clone',
       description: 'A remake of the YouTube homepage using HTML, CSS, and a bit of JavaScript. With this project I learned alot about flexboxes, grids and absolute and relative elements. I also worked alot with tooltips and transitions to make everything look smooth and learned how to use @media for an extra responsive design. ',
       image: youtube_photo,
-      github: 'https://github.com/Renko2005'
+      github: 'https://github.com/Renko2005/youtube_clone',
+      website: 'https://renko2005.github.io/youtube_clone/'
     },
     {
       id: '2',
@@ -37,7 +38,7 @@
         <div>
           <p class="description">{{ project.description }}</p>
           <a :href="project.github" target="_blank"><span class="normal-github">Github repository <i class="pi pi-github"></i></span><span class="short-github-text">Github <i class="pi pi-github"></i></span></a>
-          <a :href="project.github" target="_blank">Website <i class="pi pi-globe"></i></a>
+          <a :href="project.website" target="_blank">Website <i class="pi pi-globe"></i></a>
         </div>
         <img :src="project.image" alt="Project Image" class="project-photo"/>
       </div>

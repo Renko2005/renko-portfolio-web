@@ -1,6 +1,6 @@
 <script setup>
 import ProjectPreview from '@/components/ProjectPreview.vue'; 
-import youtube_photo from '@/assets/youtube_homepage_clone.png';
+import youtube_photo from '/public/youtube_homepage_clone.png';
 
 const projects = [
   {

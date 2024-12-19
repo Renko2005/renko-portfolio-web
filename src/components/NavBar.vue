@@ -1,6 +1,6 @@
 <script setup>
 import { RouterLink, useRoute } from 'vue-router';
-import cv_foto from '@/assets/cv_foto.jpg';
+import cv_foto from '/public/cv_foto.jpg';
 import { ref } from 'vue';
 
 const isActiveLink = (routePath) => {
