@@ -1,17 +1,17 @@
 <script setup>
-  import cv_as_foto from '/public/cv_as_foto.png';
+  import renko_cv from '/public/renko_cv.png';
 </script>
 <template>
   <section class="resume-container">
     <h1 class="title">My Resume</h1>
     <div class="cv-image-container">
       <img
-        :src="cv_as_foto"
+        :src="renko_cv"
         alt="My Resume"
         class="cv-image"
       />
       <a
-        href="public\cv.pdf"
+        href="public\renko_cv.pdf"
         download="Renko_Brauckman_Resume.pdf"
         class="download-btn"
       >

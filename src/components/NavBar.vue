@@ -172,6 +172,12 @@ const toggleTheme = () => {
   }
 }
 @media (max-width: 680px) {
+  .cv-photo {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 1.5rem;
+    margin-left: 0.7rem;
+  }
   .theme-text {
     display: none; 
   }
