@@ -64,6 +64,9 @@ const toggleTheme = () => {
       <button @click="toggleTheme" class="theme-toggle-btn">
         <span class="theme-text">{{ isDarkMode ? 'Light Mode' : 'Dark Mode' }}</span>
         <span class="short-text">Mode</span>
+        <span class="icon-text">
+          <i :class="isDarkMode ? 'pi pi-sun' : 'pi pi-moon'"></i>
+        </span>
       </button>
     </div>
   </div>
@@ -166,6 +169,9 @@ const toggleTheme = () => {
 .short-text {
   display: none;
 }
+.icon-text{
+  display: none;
+}
 @media (max-width: 1200px) {
   .dev_name {
     display: none; 
@@ -181,9 +187,30 @@ const toggleTheme = () => {
   .theme-text {
     display: none; 
   }
-
+  .icon-text {
+    display: inline-block;
+    margin-left: 0.4rem;
+  }
   .short-text {
     display: inline-block; 
   }
 }
+@media (max-width: 440px) {
+  .cv-foto {
+    display: none;
+  }
+  .icon-text {
+    display: inline-block;
+    margin-top: 0.2rem;
+    margin-right: 0.2rem;
+    margin-left: 0.2rem;
+  }
+  .short-text {
+    display: none;
+  }
+  .theme-toggle-btn {
+    padding: 0.5rem;
+  }
+}
+
 </style>

@@ -1,5 +1,5 @@
 <script setup>
-  import renko_cv from '/public/renko_cv.png';
+  const renko_cv = "/renko_cv.png";
 </script>
 <template>
   <section class="resume-container">
@@ -11,7 +11,7 @@
         class="cv-image"
       />
       <a
-        href="public\renko_cv.pdf"
+        href="renko_cv.pdf"
         download="Renko_Brauckman_Resume.pdf"
         class="download-btn"
       >
